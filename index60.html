@@ -13,6 +13,10 @@
 
         function fibbonachi(n) {
             let arr1 = [0, 1];
+            if (n >= 1000) {
+                alert('Введите меньшее число, слишком большое значение');
+                return;
+            }
             if (n == 0 || n < 0) {
                 alert('Неверный ввод данных');
                 return;
