@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        var data = 4;
+        var valueToFill = 'b';
+        changeElements();
+        function changeElements() {
+            data = Number(prompt('Введите, пожалуйста, размер массива', 4));
+            valueToFill = prompt('Теперь введите содержимое массива', 'b');
+        }
+
+        if (isNaN(data)) {
+            console.log('Ошибка! Проверьте вводимое значение "data"');
+        }
+
+        const fill = (arraySize, value) => new Array(arraySize).fill(value);
+        console.log(fill(data, valueToFill));
+    </script>
+</body>
+
+</html>
